@@ -349,6 +349,7 @@ p{
     background-color: #0074E4;
     padding: 4rem;
     border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(163, 163, 163);
 }
 .seccion{
     font-size: 4rem;
@@ -517,7 +518,7 @@ p{
 
 @keyframes busqueda {
     0% {width: 7rem;}
-    100%{width 14rem;
+    100%{width: 14rem;
     }
 }
 
