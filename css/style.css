@@ -37,6 +37,7 @@
 .hero{
     background-color:#aeaeaf;
     box-shadow: 10px 10px 10px rgb(163, 163, 163);
+    border-radius: 1.5rem;
 }
 
 .columnas__contenido{
@@ -54,4 +55,29 @@
     background: #4ca4ad;
     border-top: 2px solid #264E86;
     box-shadow: 0px -5px 5px rgb(163, 163, 163);
+}
+
+.mision__video iframe{
+    width:35vw;
+    height:35vh;
+}
+
+.mision{
+    background-color: #0074E4;
+    box-shadow: 10px 10px 10px rgb(163, 163, 163);
+    border-radius: 1.5rem;
+}
+
+.mision__texto{
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2rem;
+}
+
+@media screen and (max-width: 768px){
+    .mision__video iframe{
+        width:80vw;
+        height:40vh;
+    }
+
 }

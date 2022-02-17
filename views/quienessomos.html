@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,61 +13,103 @@
     <div class="grid">
         <header>
             <div class="logo">
-                <img class="logo__img" src="../img/logo.png" alt="Logo">
-                
-                <h1 class="logo__texto">Ayudando a Medicos y Padres a cuidar la salud de nuestro futuro</h1>
-            </div>
-            <nav class="menu">
-                <ul class="menu__lista">
-                    <li class="menu__items"><a href="../index.html">Inicio</a></li>
-                    <li class="menu__items"><a class="menu__items--selected" href="#">Quienes Somos</a></li>
-                    <li class="menu__items"><a href="./servicios.html">Servicios</a></li>
-                    <li class="menu__items"><a href="./contacto.html">Contacto</a></li>
-                    <li class="menu__items"><a href="./ingresar.html">Ingresar</a></li>
-                </ul>
-                <div class="menu__busqueda">
-                    <form class="menu__form" action="#">
-                        <input class="menu__input" type="text" name="busqueda" id="busqueda" placeholder="Buscar">
-                        <input class="menu_submit" type="submit" value="Buscar">
-                    </form>
+                <div class="container-fluid">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-2 col-md-4 col-sm-4">
+                            <img class="logo__img img-fluid p-3" src="../img/logo.png" alt="Logo">
+                        </div>
+                        <div class="col-lg-10 col-md-8 col-sm-8">
+                            <h1 class="logo__texto text-center p-5 text-light">Ayudando a Medicos y Padres a cuidar la salud de nuestro futuro</h1>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-            </nav>
+            </div>
+            <nav class="navbar navbar-expand-lg mb-3 bg-primary navbar-dark">
+                <div class="container-fluid ">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item me-3">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item me-3">
+                        <a class="nav-link active" href="./quienessomos.html">Quienes Somos</a>
+                      </li>
+                      <li class="nav-item me-3">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item me-3">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item me-3">
+                        <a class="nav-link" href="./ingresar.html">Ingresar</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex right">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            
         </header>
         <main class="contenedor">
             <h2 data-aos="fade-right" data-aos-duration="1500" contenedor__titulo>Quienes Somos</h2>
-            <div data-aos="fade-down-right" data-aos-duration="1500" class="mision">
-                <h3 class="seccion">Nuestra Misión</h3>
-                <div class="mision__wrapper">
-                    <div class="mision__video">
-                        <iframe src="https://www.youtube.com/embed/YaJ2MIdyJdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>    
-                    <div class="mision__texto">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deserunt, dolorum, est quae quas cumque aspernatur, voluptatum at voluptate consequatur recusandae necessitatibus voluptates quo tenetur accusantium quia voluptatem esse optio saepe veniam. Eum nesciunt eaque ipsam voluptatem tenetur eius, animi alias nulla inventore laboriosam molestiae quasi iusto odio quae veritatis.</p>
+            <div class="container mision mt-5 mb-5 p-5">
+            <div data-aos="fade-down-right" data-aos-duration="1500" class="row">
+                <div class="col-12">
+                    <h3 class="seccion">Nuestra Misión</h3>
+                </div>
+                <div class="col-md-6">
+                        <div class="mision__video">
+                            <iframe src="https://www.youtube.com/embed/YaJ2MIdyJdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>    
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mision__texto">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deserunt, dolorum, est quae quas cumque aspernatur, voluptatum at voluptate consequatur recusandae necessitatibus voluptates quo tenetur accusantium quia voluptatem esse optio saepe veniam. Eum nesciunt eaque ipsam voluptatem tenetur eius, animi alias nulla inventore laboriosam molestiae quasi iusto odio quae veritatis.</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <h3 data-aos="fade-right" data-aos-duration="1500" class="seccion">Nuestro Equipo</h3>
-            <div class="equipo">
-                <div data-aos="zoom-in-down" data-aos-duration="1500" class="equipo__member">
-                    <h3>Doctor 1</h3>
-                    <img src="../img/quienes somos/Doctor1.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis suscipit explicabo architecto illo non.</p>
-                </div>
-                <div data-aos="zoom-in-down" data-aos-duration="1500" class="equipo__member">
-                    <h3>Doctor 2</h3>
-                    <img src="../img/quienes somos/Doctor2.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis suscipit explicabo architecto illo non.</p>
+            <div class="equipo container ">
+                <div class="row justify-content-between flex-md-nowrap">
+                    <div data-aos="zoom-in-down" data-aos-duration="1500" class="equipo__member col-md-4">
+                        <h3>Doctor 1</h3>
+                        <img class="img-fluid" src="../img/quienes somos/Doctor1.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis suscipit explicabo architecto illo non.</p>
+                    </div>
+                    <div data-aos="zoom-in-down" data-aos-duration="1500" class="equipo__member col-md-4">
+                        <h3>Doctor 2</h3>
+                        <img class="img-fluid" src="../img/quienes somos/Doctor2.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis suscipit explicabo architecto illo non.</p>
+                    </div>
                 </div>
             </div>
         </main>
         <footer class="footer">
-            <div class="footer__redes">
-                <a href="https://instagram.com"><img class="footer__icono" src="../img/instagram-brands.svg" alt=""></a>
-                <a href="https://twitter.com"><img class="footer__icono" src="../img/twitter-brands.svg" alt=""></a>
-                <a href="https://youtube.com"><img class="footer__icono" src="../img/youtube-brands.svg" alt=""></a>
-            </div>
-            <div class="footer__ycomb">
-                <a href="https://www.ycombinator.com"><img class="footer__icono" src="../img/y-combinator-brands.svg" alt=""></a>
+            <div class="container-fluid">
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <div class="footer__redes">
+                      <a href="https://instagram.com"><img class="footer__icono" src="../img/instagram-brands.svg" alt=""></a>
+                      <a href="https://twitter.com"><img class="footer__icono" src="../img/twitter-brands.svg" alt=""></a>
+                      <a href="https://youtube.com"><img class="footer__icono" src="../img/youtube-brands.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class="footer__ycomb">
+                      <a href="https://www.ycombinator.com"><img class="footer__icono" src="../img/y-combinator-brands.svg" alt=""></a>
+                  </div>
+                </div>
+        
+              </div>
             </div>
         </footer>
     </div>
@@ -74,5 +117,6 @@
 <script>
     AOS.init();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
