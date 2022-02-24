@@ -1,0 +1,34 @@
+.hero{
+    background-color:#aeaeaf;
+    box-shadow: 10px 10px 10px rgb(163, 163, 163);
+    border-radius: 1.5rem;
+}
+
+.columnas__contenido{
+    background-color: #c6c8ce;
+    box-shadow: 10px 10px 10px rgb(163, 163, 163);
+}
+
+
+.mision{
+    background-color: #0074E4;
+    box-shadow: 10px 10px 10px rgb(163, 163, 163);
+    border-radius: 1.5rem;
+    
+    &__video iframe{
+        width:35vw;
+        height:35vh;
+    }
+    
+    &__texto{
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        line-height: 2rem;
+    }
+}
+
+.icono{
+    width:2rem;
+    height:2rem;
+    margin: 1rem 1rem;
+}
