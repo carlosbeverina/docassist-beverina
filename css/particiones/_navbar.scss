@@ -1,7 +1,7 @@
 .navbar{
-    background-color: #3D74E5;
-    box-shadow: 0px 10px 5px rgb(163, 163, 163);
-    border-top: 1px rgb(172, 172, 172) solid;
+    background-color: map-get($colores, navbar);
+    box-shadow: 0px 10px 5px map-get($colores, sombra);
+    border-top: 1px map-get($colores, gris) solid;
     
     & a{
         color:black;
@@ -17,6 +17,6 @@
 }
 
 .btn-outline-success:hover{
-    background-color: #264E86;
-    border-color: #264E86;
+    background-color: map-get($colores, azul);
+    border-color: map-get($colores, azul);
 }

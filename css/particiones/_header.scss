@@ -1,5 +1,6 @@
+@import "./variables";
 .logo{
-    background: #264E86;
+    background: map-get($colores, azul);
     &__texto{
         font-style: italic;
         font-weight: 400;

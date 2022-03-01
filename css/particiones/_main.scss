@@ -1,23 +1,30 @@
+@import "./responsive";
+@import "./variables";
+/*Index*/
 .hero{
-    background-color:#aeaeaf;
-    box-shadow: 10px 10px 10px rgb(163, 163, 163);
+    background-color:map-get($colores, gris);
+    box-shadow: 10px 10px 10px map-get($colores, sombra);
     border-radius: 1.5rem;
 }
 
 .columnas__contenido{
-    background-color: #c6c8ce;
-    box-shadow: 10px 10px 10px rgb(163, 163, 163);
+    background-color: map-get($colores, gris);
+    box-shadow: 10px 10px 10px map-get($colores, sombra);
 }
 
-
+/*Quienes Somos*/
 .mision{
-    background-color: #0074E4;
-    box-shadow: 10px 10px 10px rgb(163, 163, 163);
+    background-color: map-get($colores, mision);
+    box-shadow: 10px 10px 10px map-get($colores, sombra);
     border-radius: 1.5rem;
     
     &__video iframe{
         width:35vw;
         height:35vh;
+        @include mobile {
+            width:80vw;
+            height:40vh;
+        }
     }
     
     &__texto{
@@ -25,10 +32,208 @@
         font-family: 'Roboto', sans-serif;
         line-height: 2rem;
     }
+    
 }
 
 .icono{
-    width:2rem;
-    height:2rem;
-    margin: 1rem 1rem;
+    @extend .footer__icono;
+    margin: 0;
 }
+
+/*Contacto*/
+
+.form{
+    
+    & form{
+        display: flex;
+        align-items:center;
+        align-content: center;
+        justify-content: center;
+        width:100%;
+    }
+    & fieldset {
+        padding: 3rem;
+        background-color: #aeaeaf;
+        border-radius: 15px;
+        width:100%;
+    }
+
+    & input, & textarea, & select {
+        width:100%
+    }
+
+    & .botones{
+        width:6rem;
+    }
+    
+    &__nombre{
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    
+    &__email, &__motivo, &__area{
+        margin: 1rem 0;
+    }
+    &__nombre label, &__email label, &__motivo label, &__area label{
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: underline;
+        width:100%;
+    }
+    
+    &__botones{
+        text-align: center;
+    }
+    
+    &__area label {
+        display: block;
+    }
+}
+
+/*Ingresar*/
+
+.wrapper {
+    display: flex; 
+    background-color: map-get($colores, navbar);
+    margin: 10rem 15rem;
+    margin-bottom: 0;
+    min-height: 50vh;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    @include mobile {
+        margin:10rem 0 0 10vw ;
+        width: 80vw;
+        align-self: center;
+    }
+}
+
+.login{
+    display: flex;
+    background: #fff;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:-9rem;
+    border: black 1px solid;
+    padding: 1rem 6rem;
+    @include mobile{
+        width: 70vw;
+    }
+    
+    & img {
+        width: 40vh;
+    }
+    
+    &__datos{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__datos label, &__datos button{
+        margin-top: 2rem;
+    }
+    
+    &__forgot{
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+/*Servicios*/
+
+.planLat {
+    background-color:map-get($colores, mision);
+    padding: 0.3rem;
+    border-radius: 15px;
+    @include mobile {
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    & h3{
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    
+    &__lista{
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+        margin-top: 2rem;
+    }
+
+    &__precio{
+        margin-top: 2rem;
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: underline;
+    }
+    &__valor{
+        margin-top: 0.7rem;
+        font-size: 2rem;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+    }
+
+}
+
+.planCen {
+    background-color:map-get($colores, footer);
+    padding: 0.3rem;
+    border-radius: 15px;
+    margin: 0 2rem;
+    @include mobile {
+        margin-bottom: 2rem;
+    }
+    
+    & h3{
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    &__lista{
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+        margin-top: 2rem;
+    }
+
+    &__precio{
+        margin-top: 4rem;
+        font-size: 2.5rem;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    &__valor{
+        margin-top: 0.7rem;
+        font-size: 2.5rem;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+    }
+}
+
+.serviciosEsp {
+    margin-bottom: 6rem;
+    background-color: map-get($colores , gris);
+    padding:3rem;
+    border-radius: 15px;
+    &__column img{
+        margin-bottom: 2rem;
+        border-radius: 15px;
+    }
+    &__column p{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+

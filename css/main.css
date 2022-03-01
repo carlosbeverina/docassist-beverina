@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .logo {
   background: #264E86;
 }
@@ -13,7 +20,7 @@
   background-color: #3D74E5;
   -webkit-box-shadow: 0px 10px 5px #a3a3a3;
           box-shadow: 0px 10px 5px #a3a3a3;
-  border-top: 1px #acacac solid;
+  border-top: 1px #aeaeaf solid;
 }
 
 .navbar a {
@@ -32,6 +39,7 @@
   border-color: #264E86;
 }
 
+/*Index*/
 .hero {
   background-color: #aeaeaf;
   -webkit-box-shadow: 10px 10px 10px #a3a3a3;
@@ -40,11 +48,12 @@
 }
 
 .columnas__contenido {
-  background-color: #c6c8ce;
+  background-color: #aeaeaf;
   -webkit-box-shadow: 10px 10px 10px #a3a3a3;
           box-shadow: 10px 10px 10px #a3a3a3;
 }
 
+/*Quienes Somos*/
 .mision {
   background-color: #0074E4;
   -webkit-box-shadow: 10px 10px 10px #a3a3a3;
@@ -57,6 +66,13 @@
   height: 35vh;
 }
 
+@media screen and (max-width: 768px) {
+  .mision__video iframe {
+    width: 80vw;
+    height: 40vh;
+  }
+}
+
 .mision__texto {
   font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
@@ -64,9 +80,243 @@
 }
 
 .icono {
-  width: 2rem;
-  height: 2rem;
-  margin: 1rem 1rem;
+  margin: 0;
+}
+
+/*Contacto*/
+.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.form fieldset {
+  padding: 3rem;
+  background-color: #aeaeaf;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.form input, .form textarea, .form select {
+  width: 100%;
+}
+
+.form .botones {
+  width: 6rem;
+}
+
+.form__nombre {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.form__email, .form__motivo, .form__area {
+  margin: 1rem 0;
+}
+
+.form__nombre label, .form__email label, .form__motivo label, .form__area label {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  width: 100%;
+}
+
+.form__botones {
+  text-align: center;
+}
+
+.form__area label {
+  display: block;
+}
+
+/*Ingresar*/
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #3D74E5;
+  margin: 10rem 15rem;
+  margin-bottom: 0;
+  min-height: 50vh;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    margin: 10rem 0 0 10vw;
+    width: 80vw;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -9rem;
+  border: black 1px solid;
+  padding: 1rem 6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .login {
+    width: 70vw;
+  }
+}
+
+.login img {
+  width: 40vh;
+}
+
+.login__datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login__datos label, .login__datos button {
+  margin-top: 2rem;
+}
+
+.login__forgot {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/*Servicios*/
+.planLat {
+  background-color: #0074E4;
+  padding: 0.3rem;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .planLat {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.planLat h3 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.planLat__lista {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.planLat__precio {
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.planLat__valor {
+  margin-top: 0.7rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.planCen {
+  background-color: #4ca4ad;
+  padding: 0.3rem;
+  border-radius: 15px;
+  margin: 0 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .planCen {
+    margin-bottom: 2rem;
+  }
+}
+
+.planCen h3 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.planCen__lista {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.planCen__precio {
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.planCen__valor {
+  margin-top: 0.7rem;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.serviciosEsp {
+  margin-bottom: 6rem;
+  background-color: #aeaeaf;
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.serviciosEsp__column img {
+  margin-bottom: 2rem;
+  border-radius: 15px;
+}
+
+.serviciosEsp__column p {
+  font-size: 1rem;
+  text-align: center;
 }
 
 .footer {
@@ -76,16 +326,9 @@
           box-shadow: 0px -5px 5px #a3a3a3;
 }
 
-.footer__icono {
+.footer__icono, .icono {
   width: 2rem;
   height: 2rem;
   margin: 1rem 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  .mision__video iframe {
-    width: 80vw;
-    height: 40vh;
-  }
 }
 /*# sourceMappingURL=main.css.map */
