@@ -1,7 +1,7 @@
 @import "./variables";
 .logo{
     background: map-get($colores, azul);
-    &__texto{
+    &__texto h2{
         font-style: italic;
         font-weight: 400;
         font-family: 'Roboto', sans-serif;
