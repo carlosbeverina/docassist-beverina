@@ -90,6 +90,10 @@
     }
 }
 
+.contact:hover{
+    filter: invert(0.5);
+}
+
 /*Ingresar*/
 
 .wrapper {
@@ -147,6 +151,7 @@
     background-color:map-get($colores, mision);
     padding: 0.3rem;
     border-radius: 15px;
+    box-shadow: 10px 10px 10px map-get($colores, sombra);
     @include mobile {
         margin-bottom: 2rem;
         margin-left: 1rem;
@@ -188,6 +193,7 @@
     padding: 0.3rem;
     border-radius: 15px;
     margin: 0 2rem;
+    box-shadow: 10px 10px 10px map-get($colores, sombra);
     @include mobile {
         margin-bottom: 2rem;
     }

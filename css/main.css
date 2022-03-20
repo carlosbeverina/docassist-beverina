@@ -10,7 +10,7 @@
   background: #264E86;
 }
 
-.logo__texto {
+.logo__texto h2 {
   font-style: italic;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
@@ -138,6 +138,11 @@
   display: block;
 }
 
+.contact:hover {
+  -webkit-filter: invert(0.5);
+          filter: invert(0.5);
+}
+
 /*Ingresar*/
 .wrapper {
   display: -webkit-box;
@@ -221,6 +226,8 @@
   background-color: #0074E4;
   padding: 0.3rem;
   border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 10px #a3a3a3;
+          box-shadow: 10px 10px 10px #a3a3a3;
 }
 
 @media screen and (max-width: 768px) {
@@ -265,6 +272,8 @@
   padding: 0.3rem;
   border-radius: 15px;
   margin: 0 2rem;
+  -webkit-box-shadow: 10px 10px 10px #a3a3a3;
+          box-shadow: 10px 10px 10px #a3a3a3;
 }
 
 @media screen and (max-width: 768px) {
